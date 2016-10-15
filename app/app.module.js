@@ -10,21 +10,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
-var centro_component_1 = require('./platform/components/centro/centro.component');
-var menulist_component_1 = require('./platform/components/menu/menulist/menulist.component');
-var menuitem_component_1 = require('./platform/components/menu/menuitem/menuitem.component');
-var actionpanel_component_1 = require('./navigation/actionbar/actionpanel/actionpanel.component');
-var notification_component_1 = require('./navigation/actionbar/notification/notification.component');
-var profile_component_1 = require('./navigation/actionbar/profile/profile.component');
 var app_component_1 = require('./app.component');
+var button_1 = require('@angular2-material/button');
+//import { MdIconModule } from '@angular2-material/icon';
+var card_1 = require('@angular2-material/card');
+//import {MdIconRegistry} from '@angular2-material/icon';
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule],
-            declarations: [app_component_1.AppComponent, centro_component_1.CentroComponent, menulist_component_1.MenuListComponent, menuitem_component_1.MenuItemComponent, actionpanel_component_1.ActionPanelComponent, notification_component_1.NotificationComponent, profile_component_1.ProfileComponent],
-            bootstrap: [app_component_1.AppComponent]
+            imports: [platform_browser_1.BrowserModule, button_1.MdButtonModule, card_1.MdCardModule],
+            declarations: [app_component_1.AppComponent],
+            bootstrap: [app_component_1.AppComponent],
+            providers: []
         }), 
         __metadata('design:paramtypes', [])
     ], AppModule);

@@ -1,17 +1,16 @@
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { CentroComponent } from './platform/components/centro/centro.component';
-import { MenuListComponent } from './platform/components/menu/menulist/menulist.component'; 
-import { MenuItemComponent } from './platform/components/menu/menuitem/menuitem.component';  
-import { ActionPanelComponent } from './navigation/actionbar/actionpanel/actionpanel.component';
-import { NotificationComponent } from './navigation/actionbar/notification/notification.component';
-import { ProfileComponent } from './navigation/actionbar/profile/profile.component';
 
 import { AppComponent }  from './app.component';
+import { MdButtonModule } from '@angular2-material/button';
+//import { MdIconModule } from '@angular2-material/icon';
+import { MdCardModule } from '@angular2-material/card';
+//import {MdIconRegistry} from '@angular2-material/icon';
 
 @NgModule({
-  imports: [ BrowserModule],
-  declarations: [ AppComponent, CentroComponent, MenuListComponent, MenuItemComponent, ActionPanelComponent, NotificationComponent, ProfileComponent],
-  bootstrap: [ AppComponent ]
+  imports: [ BrowserModule, MdButtonModule, MdCardModule],
+  declarations: [ AppComponent ],
+  bootstrap: [ AppComponent ],
+  providers : []
 })
 export class AppModule { }
