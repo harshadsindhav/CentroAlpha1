@@ -13,15 +13,19 @@ var platform_browser_1 = require('@angular/platform-browser');
 var app_component_1 = require('./app.component');
 var button_1 = require('@angular2-material/button');
 //import { MdIconModule } from '@angular2-material/icon';
-var card_1 = require('@angular2-material/card');
 //import {MdIconRegistry} from '@angular2-material/icon';
+var card_1 = require('@angular2-material/card');
+//import { MdMenuModule} from '@angular2-material/menu';
+var toolbar_1 = require('@angular2-material/toolbar');
+var itemcard_component_1 = require('./components/itemcard/itemcard.component');
+var imagecard_component_1 = require('./components/imagecard/imagecard.component');
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule, button_1.MdButtonModule, card_1.MdCardModule],
-            declarations: [app_component_1.AppComponent],
+            imports: [platform_browser_1.BrowserModule, button_1.MdButtonModule, card_1.MdCardModule, toolbar_1.MdToolbarModule],
+            declarations: [app_component_1.AppComponent, itemcard_component_1.ItemCardComponent, imagecard_component_1.ImageCardComponent],
             bootstrap: [app_component_1.AppComponent],
             providers: []
         }), 
