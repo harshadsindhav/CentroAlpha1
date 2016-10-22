@@ -1,0 +1,58 @@
+
+
+
+<div>
+
+   <md-toolbar color="primary">
+     <span>
+        <md-icon class="icon-20">pets</md-icon>
+        Centro Demo
+     </span>
+     <button md-button [md-menu-trigger-for]="menu">
+          Settings
+     </button>
+   </md-toolbar>
+   <md-menu x-position="before" #menu="mdMenu">
+      <button md-menu-item>Profile</button>
+      <button md-menu-item>Settings</button>
+      <button md-menu-item>Contact Us</button>
+   </md-menu>
+
+   <md-sidenav-layout>
+     <md-sidenav align="start" mode="side" opened #sidenav>
+        <!--
+          <md-tab-group>
+          <md-tab>
+              <template md-tab-label>Details</template>
+              <template md-tab-content>
+                  <button md-raised-button  color="accent" (onclick)="sidenav.close()" >Close</button>
+
+              </template>
+          </md-tab>
+          <md-tab>
+              <template md-tab-label>Feed</template>
+              <template md-tab-content></template>
+          </md-tab>
+        </md-tab-group>
+        -->
+        <ul class="nav-menu">
+            <li class="nav-menu-item">
+                <a href="">Search Catalog</a>
+            </li>
+            <li class="nav-menu-item">
+                <a href="">Add Item</a>
+            </li>
+            <li class="nav-menu-item">
+                <a href="">Remove Item</a>
+            </li>
+            <li class="nav-menu-item">
+                <a href="">Analytics</a>
+            </li>
+            <li class="nav-menu-item">
+                <a href="">Complains</a>
+            </li>      
+        </ul>
+     </md-sidenav>
+
+   </md-sidenav-layout>
+</div>
